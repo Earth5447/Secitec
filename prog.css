@@ -1,0 +1,159 @@
+.main1 { 
+    width: 100%; 
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+        url(Imagem/pessoa-idosa-e-criancas-segurando-a-planta_1150-18573.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto; 
+}
+
+.toggle-1 {
+    display: none;
+}
+
+.content .par {
+    font-family: Arial;
+    letter-spacing: 0.075rem; /* Alterado para 0.075rem */
+    line-height: 1.875rem; /* Alterado para 1.875rem */
+}
+
+.men li {
+    display: inline-block;
+    width: 20rem;
+    height: 5rem;
+    background: green;
+    line-height: 0.3125rem; /* Alterado para 0.3125rem */
+    text-align: center;
+    font-size: 1.125rem; /* Alterado para 1.125rem */
+}
+
+.men li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.pages section header {
+    font-size: 1.5rem; /* Alterado para 1.5rem */
+    margin-bottom: 1em;
+}
+
+.page {
+    display: none;
+}
+
+.hide { 
+    display: none;
+}
+
+.active { 
+    background: red !important; 
+}
+
+.text-box {
+    margin-left: 11.25rem;  /* Alterado para 11.25rem (44vw equivalente a 11.25rem) */
+width: 50rem;
+}
+
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem; /* Alterado para unidades relativas */
+    display: inline-block;
+    border-radius: 6.25rem; /* Alterado para unidades relativas */
+    transition: all 0.2s;
+    position: relative; 
+    width: auto; 
+    min-width: 6.25rem; /* Alterado para unidades relativas */
+    white-space: nowrap;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente ao centro */
+    align-items: center; /* Alinha verticalmente ao centro (opcional) */
+    height: auto;
+}
+
+.btn:hover {
+    transform: translateY(-0.1875rem); /* Efeito de elevação no hover */
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2);
+    font-size: 1.125rem; /* Aumento de tamanho de fonte no hover */
+    /* Outros estilos de hover */
+}
+
+.btn:active {
+    transform: translateY(-0.0625rem); /* Alterado para unidades relativas */
+    box-shadow: 0 0.3125rem 0.625rem rgba(0, 0, 0, 0.2); /* Alterado para unidades relativas */
+}
+
+.btn-white {
+    background-color: #86ec00;
+    color: #000;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 6.25rem; /* Alterado para unidades relativas */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+}
+
+.btn-white::after {
+    background-color: #fff;
+}
+
+.btn:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0;
+}
+
+.btn-animated {
+    animation: moveInBottom 5s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(1.875rem); /* Alterado para unidades relativas */
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+li{
+    text-align: center;
+    font-size: 90%;
+}
+.btn {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.625rem 1.25rem; /* Tamanho padrão */
+    display: inline-block;
+    border-radius: 6.25rem; /* Valor relativo */
+    transition: all 0.2s;
+    position: relative;
+    width: auto;
+    min-width: 6.25rem; /* Valor relativo */
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-size: 1rem; /* Tamanho de fonte padrão */
+}
+
+
+@media screen and (max-width: 768px) {
+    .btn {
+        padding: 8px 16px; /* Reduz o padding para telas menores */
+        font-size: 14px; /* Reduz o tamanho da fonte para telas menores */
+    }
+}

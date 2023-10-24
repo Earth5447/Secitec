@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh; /* 100% da altura da viewport */
+}
+.main {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%),
+        url(https://img.freepik.com/fotos-gratis/agricultura-inteligente-iot-com-fundo-de-arvore-de-plantio-a-mao_53876-124626.jpg?w=996&t=st=1695724717~exp=1695725317~hmac=159c7ed365fdb80f63ee0d511c0c1f59c89fbb3d4fcae6b90f3878d827584454);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 75rem;
+}
+
+.navbar {
+    max-width: 75rem; /* 75rem é equivalente a 1200px */
+    height: 4.6875rem; /* 4.6875rem é equivalente a 75px */
+    margin: auto;
+}
+
+.icon {
+    width: 12.5rem; /* 12.5rem é equivalente a 200px */
+    float: left;
+    height: 4.375rem; /* 4.375rem é equivalente a 70px */
+}
+
+.logo {
+    color: #4fd41a;
+    font-size: 2.1875rem; /* 2.1875rem é equivalente a 35px */
+    font-family: Arial;
+    padding-left: 1.25rem; /* 1.25rem é equivalente a 20px */
+    float: left;
+    padding-top: 0.625rem; /* 0.625rem é equivalente a 10px */
+    margin-top: 0.3125rem; /* 0.3125rem é equivalente a 5px */
+}
+
+.menu {
+    width: 25rem; /* 25rem é equivalente a 400px */
+    float: left;
+    height: 4.375rem; /* 4.375rem é equivalente a 70px */
+    align-items: center;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 3.875rem; /* 3.875rem é equivalente a 62px */
+    margin-top: 1.6875rem; /* 1.6875rem é equivalente a 27px */
+    font-size: 0.875rem; /* 0.875rem é equivalente a 14px */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #4fd41a;
+}
+
+
+
+.srch {
+    font-family: 'Times New Roman';
+    width: 12.5rem; /* 12.5rem é equivalente a 200px */
+    height: 2.5rem; /* 2.5rem é equivalente a 40px */
+    background: transparent;
+    border: 0.0625rem solid #4fd41a; /* 0.0625rem é equivalente a 1px */
+    margin-top: 0.8125rem; /* 0.8125rem é equivalente a 13px */
+    color: #fff;
+    border-right: none;
+    font-size: 1rem; /* 1rem é equivalente a 16px */
+    float: left;
+    padding: 0.625rem; /* 0.625rem é equivalente a 10px */
+    border-bottom-left-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    border-top-left-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+}
+
+.btn {
+    width: 6.25rem; /* 6.25rem é equivalente a 100px */
+    height: 2.5rem; /* 2.5rem é equivalente a 40px */
+    background: #4fd41a;
+    border: 0.125rem solid #4fd41a; /* 0.125rem é equivalente a 2px */
+    margin-top: 0.8125rem; /* 0.8125rem é equivalente a 13px */
+    color: #fff;
+    font-size: 0.9375rem; /* 0.9375rem é equivalente a 15px */
+    border-bottom-right-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    border-bottom-right-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #000;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.srch:focus {
+    outline: none;
+}
+
+.content {
+    max-width: 75rem; /* 75rem é equivalente a 1200px */
+    height: auto;
+    margin: auto;
+    color: #fff;
+    position: relative;
+}
+
+.content .par {
+    padding-left: 1.25rem; /* 1.25rem é equivalente a 20px */
+    padding-bottom: 1.5625rem; /* 1.5625rem é equivalente a 25px */
+    font-family: Arial;
+    letter-spacing: 0.075rem; /* 0.075rem é equivalente a 1.2px */
+    line-height: 1.875rem; /* 1.875rem é equivalente a 30px */
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 3.125rem; /* 3.125rem é equivalente a 50px */
+    padding-left: 1.25rem; /* 1.25rem é equivalente a 20px */
+    margin-top: 9%; /* 9% é equivalente à porcentagem da altura do viewport */
+    letter-spacing: 0.125rem; /* 0.125rem é equivalente a 2px */
+}
+
+.content .cn {
+    width: 10rem; /* 10rem é equivalente a 160px */
+    height: 2.5rem; /* 2.5rem é equivalente a 40px */
+    background: #4fd41a;
+    border: none;
+    margin-bottom: 0.625rem; /* 0.625rem é equivalente a 10px */
+    margin-left: 1.25rem; /* 1.25rem é equivalente a 20px */
+    font-size: 1.125rem; /* 1.125rem é equivalente a 18px */
+    border-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s ease;
+}
+
+.cn:hover {
+    background-color: #fff;
+}
+
+.content span {
+    color: #4fd41a;
+    font-size: 4.0625rem; /* 4.0625rem é equivalente a 65px */
+}
+
+.form {
+    width: 15.625rem; /* 15.625rem é equivalente a 250px */
+    height: 23.75rem; /* 23.75rem é equivalente a 380px */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: -1.25rem; /* -1.25rem é equivalente a -20px */
+    left: 54.375rem; /* 54.375rem é equivalente a 870px */
+    transform: translate(0%, -5%);
+    border-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    padding: 1.5625rem; /* 1.5625rem é equivalente a 25px */
+}
+
+.form h2 {
+    width: 13.75rem; /* 13.75rem é equivalente a 220px */
+    font-family: sans-serif;
+    text-align: center;
+    color: #4fd41a;
+    font-size: 1.375rem; /* 1.375rem é equivalente a 22px */
+    background-color: #fff;
+    border-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    margin: 0.125rem; /* 0.125rem é equivalente a 2px */
+    padding: 0.5rem; /* 0.5rem é equivalente a 8px */
+}
+
+.form input {
+    width: 15rem; /* 15rem é equivalente a 240px */
+    height: 2.1875rem; /* 2.1875rem é equivalente a 35px */
+    background: transparent;
+    border-bottom: 0.0625rem solid #4fd41a; /* 0.0625rem é equivalente a 1px */
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 0.9375rem; /* 0.9375rem é equivalente a 15px */
+    letter-spacing: 0.0625rem; /* 0.0625rem é equivalente a 1px */
+    margin-top: 1.875rem; /* 1.875rem é equivalente a 30px */
+    font-family: sans-serif;
+}
+
+.form input:focus {
+    outline: none;
+}
+
+::placeholder {
+    color: #fff;
+    font-family: Arial;
+}
+
+.btnn {
+    width: 15rem; /* 15rem é equivalente a 240px */
+    height: 2.5rem; /* 2.5rem é equivalente a 40px */
+    background: #4fd41a;
+    border: none;
+    margin-top: 1.875rem; /* 1.875rem é equivalente a 30px */
+    font-size: 1.125rem; /* 1.125rem é equivalente a 18px */
+    border-radius: 0.625rem; /* 0.625rem é equivalente a 10px */
+    cursor: pointer;
+    color: #fff;
+    transition: 0.4s ease;
+}
+
+.btnn:hover {
+    background: #fff;
+    color: #4fd41a;
+}
+
+.btnn a {
+    text-decoration: none;
+    color: #000;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.0625rem; /* 1.0625rem é equivalente a 17px */
+    padding-top: 1.25rem; /* 1.25rem é equivalente a 20px */
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: #4fd41a;
+}
+
+.liw {
+    padding-top: 0.9375rem; /* 0.9375rem é equivalente a 15px */
+    padding-bottom: 0.625rem; /* 0.625rem é equivalente a 10px */
+    text-align: center;
+}
+
+
+.logo:hover{
+    transform:scale(20rem); 
+}
+img{
+    align-self: right;
+    position: fixed;
+    height: 10rem;
+    opacity: 50%;
+  }
